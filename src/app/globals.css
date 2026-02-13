@@ -7,8 +7,19 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains);
+  --font-heading: var(--font-oxanium);
+  --font-racing: var(--font-racing);
+  --color-boom-pink: #FF45CE;
+  --color-boom-pink-dark: #7E376B;
+  --color-boom-blue-dark: #0C2435;
+  --color-boom-blue-text: #19435D;
+  --color-boom-blue-accent: #00ADFF;
+  --color-boom-blue-airforce: #297EA6;
+  --color-boom-black: #15171B;
+  --color-boom-blue-pale: #A9E3FF;
+  --color-boom-grey: #8C9AAD;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -49,6 +60,15 @@
 
 :root {
   --radius: 0.625rem;
+  --boom-pink: #FF45CE;
+  --boom-pink-dark: #7E376B;
+  --boom-blue-dark: #0C2435;
+  --boom-blue-text: #19435D;
+  --boom-blue-accent: #00ADFF;
+  --boom-blue-airforce: #297EA6;
+  --boom-black: #15171B;
+  --boom-blue-pale: #A9E3FF;
+  --boom-grey: #8C9AAD;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
