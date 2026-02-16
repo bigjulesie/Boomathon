@@ -9,7 +9,7 @@ export function CoreSkills() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="protocol" ref={ref} className="bg-boom-blue-dark py-20 md:py-28">
+    <section id="protocol" ref={ref} className="bg-boom-blue-dark pt-20 md:pt-28 pb-28 md:pb-40">
       <div className="mx-auto max-w-[1512px] px-8 lg:px-[146px]">
         {/* Hexagon illustration */}
         <motion.div

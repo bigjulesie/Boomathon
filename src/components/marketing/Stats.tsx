@@ -9,7 +9,7 @@ export function Stats() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="mission" ref={ref} className="bg-boom-blue-dark py-20 md:py-28">
+    <section id="mission" ref={ref} className="bg-boom-blue-dark pt-16 md:pt-[88px] pb-20 md:pb-28">
       <div className="mx-auto max-w-[1512px]">
         {/* Panoramic participant image panels */}
         <motion.div

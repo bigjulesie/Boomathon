@@ -9,7 +9,7 @@ export function EpicQuest() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="intel" ref={ref} className="bg-white py-20 md:py-28">
+    <section id="intel" ref={ref} className="bg-white pt-11 pb-20 md:pb-28">
       <div className="mx-auto max-w-[1512px] px-8 lg:px-[146px]">
         {/* Boomathon namestyle with hexagon */}
         <motion.div

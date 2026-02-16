@@ -8,7 +8,7 @@ export function CTA() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="initialise" ref={ref} className="bg-white py-20 md:py-28">
+    <section id="initialise" ref={ref} className="bg-white pt-24 md:pt-[132px] pb-20 md:pb-28">
       <div className="mx-auto max-w-[1512px] px-8 lg:px-[146px]">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
