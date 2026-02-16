@@ -29,6 +29,15 @@ export const metadata: Metadata = {
   title: "Boomathon | Deploy Your Potential",
   description:
     "Boomathon is an immersive team challenge that measures leadership, collaboration, and core skills through adventure-based scenarios.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
