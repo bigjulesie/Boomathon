@@ -63,7 +63,7 @@ function FAQItem({
         onClick={onToggle}
         className="w-full flex justify-between items-center py-6 text-left cursor-pointer"
       >
-        <span className="font-[family-name:var(--font-oxanium)] font-bold text-[20px] text-boom-black pr-8">
+        <span className="font-[family-name:var(--font-oxanium)] font-bold text-[18px] md:text-[20px] text-boom-black pr-8">
           {question}
         </span>
         <span className="font-[family-name:var(--font-oxanium)] text-[24px] text-boom-pink shrink-0">
@@ -96,14 +96,14 @@ export function FAQ() {
 
   return (
     <section id="faq" ref={ref} className="bg-white py-20 md:py-28">
-      <div className="mx-auto max-w-[1512px] px-8 lg:px-[146px]">
+      <div className="mx-auto max-w-[1512px] px-5 sm:px-8 md:px-16 lg:px-[146px]">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
           className="max-w-[900px]"
         >
-          <h2 className="font-[family-name:var(--font-oxanium)] font-bold text-[42px] leading-[1.2] text-boom-black mb-10">
+          <h2 className="font-[family-name:var(--font-oxanium)] font-bold text-[28px] md:text-[34px] lg:text-[42px] leading-[1.2] text-boom-black mb-10">
             Frequently Asked Questions
           </h2>
 

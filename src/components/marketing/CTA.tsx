@@ -9,18 +9,18 @@ export function CTA() {
 
   return (
     <section id="initialise" ref={ref} className="bg-white pt-24 md:pt-[132px] pb-20 md:pb-28">
-      <div className="mx-auto max-w-[1512px] px-8 lg:px-[146px]">
+      <div className="mx-auto max-w-[1512px] px-5 sm:px-8 md:px-16 lg:px-[146px]">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
           className="max-w-[1125px]"
         >
-          <h2 className="font-[family-name:var(--font-oxanium)] font-bold text-[42px] leading-[36px] text-boom-black mb-10">
+          <h2 className="font-[family-name:var(--font-oxanium)] font-bold text-[28px] leading-[1.2] md:text-[34px] lg:text-[42px] text-boom-black mb-10">
             Coming Soon: Launch Your Global Teamship Challenge
           </h2>
 
-          <div className="font-[family-name:var(--font-inter)] text-[26px] leading-[36px] tracking-[-0.52px] text-boom-black space-y-6">
+          <div className="font-[family-name:var(--font-inter)] text-[18px] md:text-[22px] lg:text-[26px] leading-[1.4] tracking-[-0.52px] text-boom-black space-y-6">
             <p>
               Boomathon is a mentally demanding relay experience where teams hand
               off across time zones to regenerate a dying planet. It&apos;s the

@@ -10,7 +10,7 @@ export function EpicQuest() {
 
   return (
     <section id="intel" ref={ref} className="bg-white pt-11 pb-20 md:pb-28">
-      <div className="mx-auto max-w-[1512px] px-8 lg:px-[146px]">
+      <div className="mx-auto max-w-[1512px] px-5 sm:px-8 md:px-16 lg:px-[146px]">
         {/* Boomathon namestyle with hexagon */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -23,6 +23,7 @@ export function EpicQuest() {
             alt="Boomathon"
             width={557}
             height={132}
+            className="w-full max-w-[557px] h-auto"
           />
         </motion.div>
 
@@ -31,7 +32,7 @@ export function EpicQuest() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="font-[family-name:var(--font-racing)] text-[40px] text-boom-black mb-8"
+          className="font-[family-name:var(--font-racing)] text-[28px] md:text-[34px] lg:text-[40px] text-boom-black mb-8"
         >
           Ignite Your Team&apos;s Epic Quest!
         </motion.h2>
@@ -44,7 +45,7 @@ export function EpicQuest() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-5"
           >
-            <p className="font-[family-name:var(--font-inter)] text-[20px] leading-[34px] text-black">
+            <p className="font-[family-name:var(--font-inter)] text-[16px] md:text-[18px] lg:text-[20px] leading-[1.7] text-black">
               Imagine harnessing the raw thrill of scaling sheer cliffs, riding
               monstrous waves, or pushing through gruelling marathons – but
               channeled into forging unbreakable teams that conquer corporate
@@ -52,7 +53,7 @@ export function EpicQuest() {
               adrenaline-fuelled launchpad to elite teamship, where executives
               transform into trailblazing adventurers.
             </p>
-            <p className="font-[family-name:var(--font-inter)] text-[20px] leading-[34px] text-black">
+            <p className="font-[family-name:var(--font-inter)] text-[16px] md:text-[18px] lg:text-[20px] leading-[1.7] text-black">
               Dive into high-stakes virtual realms that test your mettle, build
               unbreakable bonds, and deliver real-world enterprise wins. Ready to
               rally your squad and redefine what&apos;s possible?
@@ -73,7 +74,7 @@ export function EpicQuest() {
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
-            <p className="font-[family-name:var(--font-jetbrains)] text-[16px] tracking-[2.72px] text-boom-blue-text text-center mt-3 uppercase">
+            <p className="font-[family-name:var(--font-jetbrains)] text-[14px] sm:text-[16px] tracking-[2.72px] text-boom-blue-text text-center mt-3 uppercase">
               The Ultimate Arena of Tough Teamship
             </p>
           </motion.div>

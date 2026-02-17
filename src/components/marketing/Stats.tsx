@@ -46,12 +46,12 @@ export function Stats() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.7 }}
-          className="grid grid-cols-3 gap-0 mb-20"
+          className="grid grid-cols-2 md:grid-cols-3 gap-0 mb-12 md:mb-20"
         >
           {Array.from({ length: 3 }).map((_, i) => (
             <div
               key={i}
-              className="relative aspect-[504/266] overflow-hidden"
+              className={`relative aspect-[504/266] overflow-hidden ${i === 1 ? "hidden md:block" : ""}`}
             >
               <Image
                 src="/images/participants.jpg"
@@ -59,25 +59,25 @@ export function Stats() {
                 fill
                 className="object-cover"
                 style={{ objectPosition: `${i * 33}% center` }}
-                sizes="33vw"
+                sizes="(max-width: 768px) 50vw, 33vw"
               />
             </div>
           ))}
         </motion.div>
 
-        <div className="px-8 lg:px-[146px]">
+        <div className="px-5 sm:px-8 md:px-16 lg:px-[146px]">
           {/* Participants */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-center mb-20"
+            className="text-center mb-12 md:mb-20"
           >
-            <h3 className="font-[family-name:var(--font-oxanium)] font-bold text-[58px] leading-[1]">
+            <h3 className="font-[family-name:var(--font-oxanium)] font-bold text-[32px] md:text-[42px] lg:text-[58px] leading-[1]">
               <span className="text-white">12-1,000 </span>
               <span className="text-boom-pink">Participants</span>
             </h3>
-            <p className="mt-4 font-[family-name:var(--font-inter)] text-[26px] text-white text-center">
+            <p className="mt-4 font-[family-name:var(--font-inter)] text-[18px] md:text-[22px] lg:text-[26px] text-white text-center">
               Scale your adventure from intimate missions to massive mobilisations.
             </p>
           </motion.div>
@@ -87,19 +87,19 @@ export function Stats() {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="flex justify-center gap-6 mb-20"
+            className="flex justify-center gap-3 sm:gap-4 md:gap-6 mb-12 md:mb-20 flex-wrap"
           >
             {Array.from({ length: 6 }).map((_, i) => (
               <div
                 key={i}
-                className="relative w-[137px] h-[137px] rounded-full overflow-hidden"
+                className="relative w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[137px] lg:h-[137px] rounded-full overflow-hidden"
               >
                 <Image
                   src={`/images/earth-${i + 1}.png`}
                   alt={earthAlts[i]}
                   fill
                   className="object-cover"
-                  sizes="137px"
+                  sizes="(max-width: 640px) 80px, (max-width: 768px) 100px, (max-width: 1024px) 120px, 137px"
                 />
               </div>
             ))}
@@ -110,13 +110,13 @@ export function Stats() {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="text-center mb-20"
+            className="text-center mb-12 md:mb-20"
           >
-            <h3 className="font-[family-name:var(--font-oxanium)] font-bold text-[58px] leading-[1]">
+            <h3 className="font-[family-name:var(--font-oxanium)] font-bold text-[32px] md:text-[42px] lg:text-[58px] leading-[1]">
               <span className="text-white">1-24</span>
               <span className="text-boom-pink"> Time Zones</span>
             </h3>
-            <p className="mt-4 font-[family-name:var(--font-inter)] text-[26px] text-white text-center">
+            <p className="mt-4 font-[family-name:var(--font-inter)] text-[18px] md:text-[22px] lg:text-[26px] text-white text-center">
               Global relay challenge that keeps the fire burning around the clock.
             </p>
           </motion.div>
@@ -126,19 +126,19 @@ export function Stats() {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="flex justify-center gap-3 md:gap-4 mb-20 flex-wrap"
+            className="flex justify-center gap-3 md:gap-4 mb-12 md:mb-20 flex-wrap"
           >
             {Array.from({ length: 12 }).map((_, i) => (
               <div
                 key={i}
-                className="relative w-[74px] h-[74px] rounded-full overflow-hidden"
+                className="relative w-[55px] h-[55px] sm:w-[64px] sm:h-[64px] md:w-[74px] md:h-[74px] rounded-full overflow-hidden"
               >
                 <Image
                   src={`/images/clock-${i + 1}.png`}
                   alt={clockAlts[i]}
                   fill
                   className="object-cover"
-                  sizes="74px"
+                  sizes="(max-width: 640px) 55px, (max-width: 768px) 64px, 74px"
                 />
               </div>
             ))}
@@ -151,11 +151,11 @@ export function Stats() {
             transition={{ duration: 0.7, delay: 0.5 }}
             className="text-center"
           >
-            <h3 className="font-[family-name:var(--font-oxanium)] font-bold text-[58px] leading-[1]">
+            <h3 className="font-[family-name:var(--font-oxanium)] font-bold text-[32px] md:text-[42px] lg:text-[58px] leading-[1]">
               <span className="text-white">2-24</span>
               <span className="text-boom-pink"> Hours Duration</span>
             </h3>
-            <p className="mt-4 font-[family-name:var(--font-inter)] text-[26px] text-white text-center">
+            <p className="mt-4 font-[family-name:var(--font-inter)] text-[18px] md:text-[22px] lg:text-[26px] text-white text-center">
               Sprint or marathon – tailor the intensity to your team&apos;s grit.
             </p>
           </motion.div>

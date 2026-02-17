@@ -13,8 +13,8 @@ export default function MarketingPage() {
       <Hero />
       <EpicQuest />
       {/* Teamship tagline banner */}
-      <div className="bg-white py-10 text-center">
-        <p className="font-[family-name:var(--font-jetbrains)] text-[30px] tracking-[5.1px] text-boom-blue-text uppercase">
+      <div className="bg-white py-8 md:py-10 text-center px-5 sm:px-8">
+        <p className="font-[family-name:var(--font-jetbrains)] text-[14px] sm:text-[18px] md:text-[22px] lg:text-[30px] tracking-[2px] sm:tracking-[3px] md:tracking-[4px] lg:tracking-[5.1px] text-boom-blue-text uppercase">
           <span className="font-medium">TEAMSHIP </span>
           <span>&gt;&gt; The Skill of Being part of a team</span>
         </p>
