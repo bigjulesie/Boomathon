@@ -26,9 +26,36 @@ const racingSansOne = Racing_Sans_One({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://boomathon.netlify.app"),
   title: "Boomathon | Deploy Your Potential",
   description:
     "Boomathon is an immersive team challenge that measures leadership, collaboration, and core skills through adventure-based scenarios.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Boomathon | Deploy Your Potential",
+    description:
+      "The ultimate arena of tough teamship. A high-stakes virtual scenario designed to test and forge elite teamship capabilities.",
+    url: "https://boomathon.netlify.app",
+    siteName: "Boomathon",
+    type: "website",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Boomathon - The Ultimate Arena of Tough Teamship",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Boomathon | Deploy Your Potential",
+    description:
+      "The ultimate arena of tough teamship. A high-stakes virtual scenario designed to test and forge elite teamship capabilities.",
+    images: ["/images/og-image.png"],
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "48x48" },
