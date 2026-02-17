@@ -1,6 +1,7 @@
 import Script from "next/script";
 import { Navbar } from "@/components/marketing/Navbar";
 import { Footer } from "@/components/marketing/Footer";
+import { faqJsonLd } from "@/components/marketing/FAQ";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -34,6 +35,13 @@ export default function MarketingLayout({
         strategy="afterInteractive"
       >
         {JSON.stringify(jsonLd)}
+      </Script>
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+      >
+        {JSON.stringify(faqJsonLd)}
       </Script>
       <Navbar />
       <main>{children}</main>

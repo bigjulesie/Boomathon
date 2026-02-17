@@ -5,6 +5,7 @@ import { EpicQuest } from "@/components/marketing/EpicQuest";
 import { Stats } from "@/components/marketing/Stats";
 import { CoreSkills } from "@/components/marketing/CoreSkills";
 import { CTA } from "@/components/marketing/CTA";
+import { FAQ } from "@/components/marketing/FAQ";
 
 export default function MarketingPage() {
   return (
@@ -21,6 +22,7 @@ export default function MarketingPage() {
       <Stats />
       <CoreSkills />
       <CTA />
+      <FAQ />
     </>
   );
 }
