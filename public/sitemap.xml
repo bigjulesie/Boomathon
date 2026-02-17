@@ -5,4 +5,14 @@
     <lastmod>2026-02-17</lastmod>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://boomathon.netlify.app/privacy</loc>
+    <lastmod>2026-02-17</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://boomathon.netlify.app/terms</loc>
+    <lastmod>2026-02-17</lastmod>
+    <priority>0.3</priority>
+  </url>
 </urlset>

@@ -1,0 +1,27 @@
+# Boomathon
+
+> The ultimate arena of tough teamship.
+
+Boomathon is a high-stakes virtual team challenge developed by Jenson8 Ltd. It measures and develops six core teamship skills: leadership, collaboration, emotional intelligence, communication, conflict resolution, and adaptability.
+
+## What is Boomathon?
+
+Boomathon is a mentally demanding relay experience where teams hand off across time zones to regenerate a dying planet. It blends the camaraderie of mountain climbers with the strategy of extreme athletes, channelled into forging unbreakable corporate teams.
+
+## Key Facts
+
+- Participants: 12 to 1,000 per event
+- Time zones: 1 to 24 (global relay format)
+- Duration: 2 to 24 hours
+- 6 core skills measured: Leadership, Collaboration, Emotional Intelligence, Communication, Conflict Resolution, Adaptability
+- Target audience: Corporate teams, executives, enterprise organisations
+
+## Contact
+
+- Email: jena@jenson8.com
+- Website: https://boomathon.netlify.app
+- Parent company: Jenson8 Ltd
+
+## Status
+
+Coming soon — launching March 2026.

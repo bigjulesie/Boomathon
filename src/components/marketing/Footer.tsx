@@ -25,7 +25,12 @@ export function Footer() {
           </p>
         </div>
 
-        <div className="mt-auto pb-[69px] text-right">
+        <div className="mt-auto pb-[69px] flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+          <p className="font-[family-name:var(--font-jetbrains)] text-[12px] text-white/30">
+            <a href="/privacy" className="hover:text-white/50 transition-colors">Privacy Policy</a>
+            <span className="mx-3" />
+            <a href="/terms" className="hover:text-white/50 transition-colors">Terms of Use</a>
+          </p>
           <p className="font-[family-name:var(--font-jetbrains)] text-[14px] leading-[36px] text-white/50">
             &copy; 2026 Jenson8 Ltd. All rights reserved.
           </p>

@@ -4,6 +4,36 @@ import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
+const participantAlts = [
+  "Teams collaborating in a Boomathon challenge",
+  "Participants strategising during a Boomathon session",
+  "Boomathon team members working together",
+];
+
+const earthAlts = [
+  "Globe showing Europe and Africa",
+  "Globe showing the Americas",
+  "Globe showing Asia and Australia",
+  "Globe showing the Pacific region",
+  "Globe showing the Atlantic region",
+  "Globe showing the Indian Ocean region",
+];
+
+const clockAlts = [
+  "Clock showing 1:00",
+  "Clock showing 2:00",
+  "Clock showing 3:00",
+  "Clock showing 4:00",
+  "Clock showing 5:00",
+  "Clock showing 6:00",
+  "Clock showing 7:00",
+  "Clock showing 8:00",
+  "Clock showing 9:00",
+  "Clock showing 10:00",
+  "Clock showing 11:00",
+  "Clock showing 12:00",
+];
+
 export function Stats() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -25,7 +55,7 @@ export function Stats() {
             >
               <Image
                 src="/images/participants.jpg"
-                alt="Participants"
+                alt={participantAlts[i]}
                 fill
                 className="object-cover"
                 style={{ objectPosition: `${i * 33}% center` }}
@@ -66,7 +96,7 @@ export function Stats() {
               >
                 <Image
                   src={`/images/earth-${i + 1}.png`}
-                  alt="Global reach"
+                  alt={earthAlts[i]}
                   fill
                   className="object-cover"
                   sizes="137px"
@@ -105,7 +135,7 @@ export function Stats() {
               >
                 <Image
                   src={`/images/clock-${i + 1}.png`}
-                  alt="Time zones"
+                  alt={clockAlts[i]}
                   fill
                   className="object-cover"
                   sizes="74px"
