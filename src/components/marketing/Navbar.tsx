@@ -35,7 +35,7 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-[family-name:var(--font-jetbrains)] text-[18px] tracking-[2.16px] text-boom-grey hover:text-white transition-colors uppercase"
+              className="font-[family-name:var(--font-jetbrains)] text-[18px] tracking-[1.5px] sm:tracking-[2.16px] text-boom-grey hover:text-white transition-colors uppercase"
             >
               {link.label}
             </Link>
@@ -84,7 +84,7 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="font-[family-name:var(--font-jetbrains)] text-[18px] tracking-[2.16px] text-boom-grey hover:text-white transition-colors uppercase"
+                className="font-[family-name:var(--font-jetbrains)] text-[18px] tracking-[1.5px] sm:tracking-[2.16px] text-boom-grey hover:text-white transition-colors uppercase"
               >
                 {link.label}
               </Link>

@@ -63,7 +63,7 @@ function FAQItem({
         onClick={onToggle}
         className="w-full flex justify-between items-center py-6 text-left cursor-pointer"
       >
-        <span className="font-[family-name:var(--font-oxanium)] font-bold text-[18px] md:text-[24px] text-boom-black pr-8">
+        <span className="font-[family-name:var(--font-oxanium)] font-bold text-[18px] md:text-[24px] text-boom-black pr-6 md:pr-8">
           {question}
         </span>
         <span className="font-[family-name:var(--font-oxanium)] text-[24px] text-boom-pink shrink-0">
