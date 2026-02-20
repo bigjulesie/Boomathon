@@ -9,7 +9,7 @@ export function EpicQuest() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="intel" ref={ref} className="bg-white pt-11 pb-20 md:pb-28">
+    <section id="how-it-works" ref={ref} className="bg-white pt-11 pb-20 md:pb-28">
       <div className="mx-auto max-w-[1512px] px-5 sm:px-8 md:px-16 lg:px-[146px]">
         {/* Boomathon namestyle with hexagon */}
         <motion.div
@@ -34,7 +34,7 @@ export function EpicQuest() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-[family-name:var(--font-racing)] text-[28px] md:text-[34px] lg:text-[40px] text-boom-black mb-8"
         >
-          Ignite Your Team&apos;s Epic Quest!
+          Your teams think they can perform under pressure. Boomathon finds out if they&apos;re right.
         </motion.h2>
 
         {/* Two-column: text + image */}
@@ -46,17 +46,13 @@ export function EpicQuest() {
             className="space-y-5"
           >
             <p className="font-[family-name:var(--font-inter)] text-[16px] md:text-[18px] lg:text-[20px] leading-[1.7] text-black">
-              Imagine harnessing the raw thrill of scaling sheer cliffs, riding
-              monstrous waves, or pushing through gruelling marathons – but
-              channeled into forging unbreakable teams that conquer corporate
-              summits! Boomathon isn&apos;t just a game; it&apos;s your
-              adrenaline-fuelled launchpad to elite teamship, where executives
-              transform into trailblazing adventurers.
+              Leadership, collaboration, resilience, communication, problem-solving, adaptability – these are the six capabilities that determine whether your teams hold together or fall apart when the stakes are high. Most organisations assume they know. Boomathon gives them proof.
             </p>
             <p className="font-[family-name:var(--font-inter)] text-[16px] md:text-[18px] lg:text-[20px] leading-[1.7] text-black">
-              Dive into high-stakes virtual realms that test your mettle, build
-              unbreakable bonds, and deliver real-world enterprise wins. Ready to
-              rally your squad and redefine what&apos;s possible?
+              Through a mentally demanding, multi-team simulation, your people face real decisions, genuine time pressure and complex handoffs across time zones. Basic instincts take over – and that&apos;s exactly what we measure.
+            </p>
+            <p className="font-[family-name:var(--font-inter)] text-[16px] md:text-[18px] lg:text-[20px] leading-[1.7] text-black">
+              Every decision and every moment of friction is captured, giving you clear, evidence-based insight into how your teams actually perform – not how they perform on a questionnaire.
             </p>
           </motion.div>
 
@@ -65,17 +61,17 @@ export function EpicQuest() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <div className="relative aspect-[581/328] overflow-hidden">
+            <div className="relative aspect-[548/341] overflow-hidden border-2 border-[#5a5a5a]">
               <Image
-                src="/images/in-game-screenshot.png"
-                alt="The Ultimate Arena of Tough Teamship"
+                src="/images/executive-team.png"
+                alt="Executive team participants in a Boomathon session"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
             <p className="font-[family-name:var(--font-jetbrains)] text-[14px] sm:text-[16px] tracking-[2.72px] text-boom-blue-text text-center mt-3 uppercase">
-              The Ultimate Arena of Tough Teamship
+              Expose &bull; Measure &bull; Know
             </p>
           </motion.div>
         </div>

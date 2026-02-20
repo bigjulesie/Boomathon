@@ -15,22 +15,19 @@ export function Footer() {
           />
 
           {/* Navigation */}
-          <nav className="flex flex-col sm:flex-row items-center gap-4 sm:gap-0 font-[family-name:var(--font-jetbrains)] text-[16px] leading-[36px] text-boom-blue-airforce">
-            <a href="#mission" className="hover:text-white transition-colors">Mission</a>
-            <span className="hidden sm:inline mx-4" />
-            <a href="#intel" className="hover:text-white transition-colors">Intel</a>
-            <span className="hidden sm:inline mx-4" />
-            <a href="#protocol" className="hover:text-white transition-colors">Protocol</a>
-            <span className="hidden sm:inline mx-4" />
-            <a href="#initialise" className="hover:text-white transition-colors">Initialise</a>
+          <nav className="flex flex-col sm:flex-row items-center gap-4 sm:gap-[50px] font-[family-name:var(--font-jetbrains)] text-[16px] leading-[normal] tracking-[2.72px] uppercase">
+            <a href="#how-it-works" className="text-boom-blue-airforce hover:text-white transition-colors">How it works</a>
+            <a href="#the-evidence" className="text-boom-blue-airforce hover:text-white transition-colors">The evidence</a>
+            <a href="#formats" className="text-boom-blue-airforce hover:text-white transition-colors">Formats</a>
+            <a href="#book-a-call" className="text-boom-pink hover:text-boom-pink/80 transition-colors">BOOK A CALL</a>
           </nav>
         </div>
 
         <div className="mt-10 md:mt-auto pb-10 md:pb-[69px] flex flex-col md:flex-row md:justify-between md:items-center gap-2">
-          <p className="font-[family-name:var(--font-jetbrains)] text-[12px] text-white/30 text-center md:text-left">
-            <a href="/privacy" className="hover:text-white/50 transition-colors">Privacy Policy</a>
+          <p className="font-[family-name:var(--font-jetbrains)] text-[14px] leading-[36px] text-boom-blue-airforce text-center md:text-left">
+            <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
             <span className="mx-3" />
-            <a href="/terms" className="hover:text-white/50 transition-colors">Terms of Use</a>
+            <a href="/terms" className="hover:text-white transition-colors">Terms of Use</a>
           </p>
           <p className="font-[family-name:var(--font-jetbrains)] text-[14px] leading-[36px] text-white/50 text-center md:text-right">
             &copy; 2026 Jenson8 Ltd. All rights reserved.

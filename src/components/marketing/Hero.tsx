@@ -49,31 +49,39 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
-              className="font-[family-name:var(--font-oxanium)] font-bold text-[clamp(3rem,6vw,90px)] leading-[1] tracking-[-0.03em] uppercase"
+              className="font-[family-name:var(--font-oxanium)] font-bold text-[clamp(3rem,6vw,90px)] leading-[1.15] tracking-[-0.03em] uppercase"
             >
-              <span className="text-white">The </span>
-              <br className="hidden lg:block" />
-              <span className="text-boom-pink">ultimate </span>
-              <br className="hidden lg:block" />
-              <span className="text-boom-pink/70">arena</span>
-              <span className="text-white"> of</span>
-              <br className="hidden lg:block" />
-              <span className="text-white"> tough</span>
-              <br className="hidden lg:block" />
-              <span className="text-white"> teamship</span>
+              <span className="text-white">DO YOU </span>
+              <span className="text-boom-pink">KNOW HOW </span>
+              <span className="text-boom-pink/70">YOUR</span>
+              <span className="text-white"> TEAMS REALLY PERFORM?</span>
             </motion.h1>
 
-            {/* Description blockquote */}
+            {/* Subtitle */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+              className="mt-6 font-[family-name:var(--font-inter)] font-bold text-[18px] md:text-[22px] lg:text-[26px] leading-[36px] tracking-[-0.52px]"
+            >
+              <span className="text-white">The </span>
+              <span className="text-boom-pink">Ultimate</span>
+              <span className="text-white"> </span>
+              <span className="text-boom-pink/70">Arena</span>
+              <span className="text-white"> of Tough Teamship</span>
+            </motion.p>
+
+            {/* Description */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-              className="mt-10 border-l-2 border-boom-blue-pale/40 pl-6 max-w-xl"
+              className="mt-6 border-l-2 border-boom-blue-pale/40 pl-6 max-w-xl"
             >
               <p className="font-[family-name:var(--font-inter)] text-[18px] md:text-[22px] lg:text-[26px] leading-[1.4] tracking-[-0.52px] text-boom-blue-pale">
-                Boomathon is a high-stakes virtual scenario designed to test and
-                forge elite teamship capabilities. Prepare for the ultimate
-                challenge.
+                Boomathon stress-tests your teams in real time – exposing how
+                they actually lead, collaborate and adapt when it matters. Real
+                decisions, real data, real results.
               </p>
             </motion.div>
 
@@ -85,16 +93,16 @@ export function Hero() {
               className="mt-8 flex flex-col sm:flex-row gap-4"
             >
               <a
-                href="#initialise"
+                href="#book-a-call"
                 className="inline-flex items-center justify-center w-full sm:w-[289px] h-[58px] sm:h-[70px] rounded-[12px] bg-boom-pink font-[family-name:var(--font-oxanium)] font-medium text-[20px] sm:text-[24px] tracking-[0.48px] text-black uppercase hover:bg-boom-pink/90 transition-colors"
               >
-                DEPLOY TEAM &nbsp;&gt;
+                BOOK A CALL &nbsp;&gt;
               </a>
               <a
-                href="#initialise"
+                href="#how-it-works"
                 className="inline-flex items-center justify-center w-full sm:w-[289px] h-[58px] sm:h-[70px] rounded-[12px] border border-boom-pink bg-boom-pink/20 font-[family-name:var(--font-oxanium)] font-medium text-[20px] sm:text-[24px] tracking-[0.48px] text-white uppercase hover:bg-boom-pink/30 transition-colors"
               >
-                MAKE CONTACT &nbsp;&gt;
+                SEE HOW IT WORKS &nbsp;&gt;
               </a>
             </motion.div>
           </div>
@@ -107,7 +115,7 @@ export function Hero() {
             className="flex justify-center lg:justify-end"
           >
             <Image
-              src="/images/telemetry.svg"
+              src="/images/telemetry-c.svg"
               alt="Live Telemetry"
               width={600}
               height={475}

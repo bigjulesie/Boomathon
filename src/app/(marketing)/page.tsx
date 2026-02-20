@@ -4,6 +4,7 @@ import { Hero } from "@/components/marketing/Hero";
 import { EpicQuest } from "@/components/marketing/EpicQuest";
 import { Stats } from "@/components/marketing/Stats";
 import { CoreSkills } from "@/components/marketing/CoreSkills";
+import { Benchmark } from "@/components/marketing/Benchmark";
 import { CTA } from "@/components/marketing/CTA";
 import { FAQ } from "@/components/marketing/FAQ";
 
@@ -21,6 +22,7 @@ export default function MarketingPage() {
       </div>
       <Stats />
       <CoreSkills />
+      <Benchmark />
       <CTA />
       <FAQ />
     </>

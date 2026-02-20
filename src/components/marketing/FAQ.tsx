@@ -35,9 +35,9 @@ const faqs = [
       "Yes. Boomathon supports 1 to 24 time zones with a global relay format. Teams hand off progress across time zones, keeping the challenge running around the clock.",
   },
   {
-    question: "What skills does Boomathon measure?",
+    question: "What does Boomathon test and measure?",
     answer:
-      "Boomathon measures six core teamship skills: Leadership, Collaboration, Emotional Intelligence, Communication, Conflict Resolution, and Adaptability. Real-time telemetry tracks team performance throughout the experience.",
+      "Boomathon measures six core teamship qualities: Leadership, Collaboration, Emotional Intelligence, Communication, Conflict Resolution, and Adaptability. Real-time telemetry tracks team performance throughout the experience.",
   },
   {
     question: "When will Boomathon be available?",
@@ -63,7 +63,7 @@ function FAQItem({
         onClick={onToggle}
         className="w-full flex justify-between items-center py-6 text-left cursor-pointer"
       >
-        <span className="font-[family-name:var(--font-oxanium)] font-bold text-[18px] md:text-[20px] text-boom-black pr-8">
+        <span className="font-[family-name:var(--font-oxanium)] font-bold text-[18px] md:text-[24px] text-boom-black pr-8">
           {question}
         </span>
         <span className="font-[family-name:var(--font-oxanium)] text-[24px] text-boom-pink shrink-0">

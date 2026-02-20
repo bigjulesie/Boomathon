@@ -39,7 +39,7 @@ export function Stats() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="mission" ref={ref} className="bg-boom-blue-dark pt-16 md:pt-[88px] pb-20 md:pb-28">
+    <section id="formats" ref={ref} className="bg-boom-blue-dark pt-16 md:pt-[88px] pb-20 md:pb-28">
       <div className="mx-auto max-w-[1512px]">
         {/* Panoramic participant image panels */}
         <motion.div
@@ -77,8 +77,8 @@ export function Stats() {
               <span className="text-white">12-1,000 </span>
               <span className="text-boom-pink">Participants</span>
             </h3>
-            <p className="mt-4 font-[family-name:var(--font-inter)] text-[18px] md:text-[22px] lg:text-[26px] text-white text-center">
-              Scale your adventure from intimate missions to massive mobilisations.
+            <p className="mt-4 font-[family-name:var(--font-inter)] text-[18px] md:text-[22px] lg:text-[26px] leading-[1.4] tracking-[-0.52px] text-white text-center max-w-[900px] mx-auto">
+              From targeted leadership pressure tests to full-scale organisational stress tests – Boomathon scales to the mission.
             </p>
           </motion.div>
 
@@ -116,8 +116,8 @@ export function Stats() {
               <span className="text-white">1-24</span>
               <span className="text-boom-pink"> Time Zones</span>
             </h3>
-            <p className="mt-4 font-[family-name:var(--font-inter)] text-[18px] md:text-[22px] lg:text-[26px] text-white text-center">
-              Global relay challenge that keeps the fire burning around the clock.
+            <p className="mt-4 font-[family-name:var(--font-inter)] text-[18px] md:text-[22px] lg:text-[26px] leading-[1.4] tracking-[-0.52px] text-white text-center max-w-[900px] mx-auto">
+              Real global teams face real global pressure. Boomathon runs across every time zone you operate in.
             </p>
           </motion.div>
 
@@ -155,8 +155,8 @@ export function Stats() {
               <span className="text-white">2-24</span>
               <span className="text-boom-pink"> Hours Duration</span>
             </h3>
-            <p className="mt-4 font-[family-name:var(--font-inter)] text-[18px] md:text-[22px] lg:text-[26px] text-white text-center">
-              Sprint or marathon – tailor the intensity to your team&apos;s grit.
+            <p className="mt-4 font-[family-name:var(--font-inter)] text-[18px] md:text-[22px] lg:text-[26px] leading-[1.4] tracking-[-0.52px] text-white text-center max-w-[900px] mx-auto">
+              A focused sprint or a gruelling relay – the intensity is yours to set. The pressure is ours to apply.
             </p>
           </motion.div>
         </div>

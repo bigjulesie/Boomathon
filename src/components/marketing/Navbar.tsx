@@ -6,9 +6,9 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { href: "#mission", label: "Mission" },
-  { href: "#intel", label: "Intel" },
-  { href: "#protocol", label: "Protocol" },
+  { href: "#how-it-works", label: "How It Works" },
+  { href: "#the-evidence", label: "The Evidence" },
+  { href: "#formats", label: "Formats" },
 ];
 
 export function Navbar() {
@@ -41,10 +41,10 @@ export function Navbar() {
             </Link>
           ))}
           <Link
-            href="#initialise"
+            href="#book-a-call"
             className="font-[family-name:var(--font-jetbrains)] font-bold text-[18px] tracking-[-0.18px] text-boom-pink border border-boom-pink rounded-[4px] px-5 py-3 hover:bg-boom-pink/10 transition-colors uppercase"
           >
-            Initialise
+            Book a Call
           </Link>
         </div>
 
@@ -90,11 +90,11 @@ export function Navbar() {
               </Link>
             ))}
             <Link
-              href="#initialise"
+              href="#book-a-call"
               onClick={() => setMenuOpen(false)}
               className="font-[family-name:var(--font-jetbrains)] font-bold text-[18px] tracking-[-0.18px] text-boom-pink border border-boom-pink rounded-[4px] px-5 py-3 hover:bg-boom-pink/10 transition-colors uppercase text-center"
             >
-              Initialise
+              Book a Call
             </Link>
           </motion.div>
         )}
