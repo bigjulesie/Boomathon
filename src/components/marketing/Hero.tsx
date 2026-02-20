@@ -35,7 +35,7 @@ export function Hero() {
           transition={{ duration: 0.6 }}
           className="mb-8"
         >
-          <span className="inline-flex items-center gap-2 border border-boom-blue-pale rounded px-3 sm:px-5 py-2 font-[family-name:var(--font-jetbrains)] text-[14px] sm:text-[16px] tracking-[2.72px] text-boom-blue-pale uppercase">
+          <span className="inline-flex items-center gap-1.5 border border-boom-blue-pale rounded px-2.5 sm:px-3 py-1 font-[family-name:var(--font-jetbrains)] text-[12px] sm:text-[14px] tracking-[2.72px] text-boom-blue-pale uppercase">
             <span className="inline-block w-2 h-2 rounded-full bg-boom-blue-pale" />
             COMING SOON &nbsp;// &nbsp;MARCH 2026
           </span>
@@ -62,7 +62,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
-              className="mt-6 font-[family-name:var(--font-inter)] font-bold text-[18px] md:text-[22px] lg:text-[26px] leading-[36px] tracking-[-0.52px]"
+              className="mt-6 font-[family-name:var(--font-inter)] font-bold text-[18px] md:text-[22px] lg:text-[26px] leading-[1.4] tracking-[-0.52px]"
             >
               <span className="text-white">The </span>
               <span className="text-boom-pink">Ultimate</span>

@@ -52,7 +52,7 @@ export function Benchmark() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="space-y-6"
           >
-            <p className="font-[family-name:var(--font-inter)] text-[18px] md:text-[22px] lg:text-[26px] leading-[36px] tracking-[-0.52px] text-white">
+            <p className="font-[family-name:var(--font-inter)] text-[18px] md:text-[22px] lg:text-[26px] leading-[1.4] tracking-[-0.52px] text-white">
               After every Boomathon, your organisation gets access to a private performance dashboard showing exactly how your teams ranked across all six capabilities – not just internally, but against every other organisation that has been through the pressure test.
             </p>
 
