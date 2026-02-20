@@ -94,13 +94,13 @@ export function Hero() {
             >
               <a
                 href="#book-a-call"
-                className="inline-flex items-center justify-center w-full sm:w-[289px] h-[58px] sm:h-[70px] rounded-[12px] bg-boom-pink font-[family-name:var(--font-oxanium)] font-medium text-[20px] sm:text-[24px] tracking-[0.48px] text-black uppercase hover:bg-boom-pink/90 transition-colors"
+                className="inline-flex items-center justify-center w-full sm:flex-1 lg:flex-none lg:w-[289px] h-[58px] sm:h-[70px] rounded-[12px] bg-boom-pink font-[family-name:var(--font-oxanium)] font-medium text-[18px] sm:text-[20px] lg:text-[24px] tracking-[0.48px] text-black uppercase hover:bg-boom-pink/90 transition-colors whitespace-nowrap"
               >
                 BOOK A CALL &nbsp;&gt;
               </a>
               <a
                 href="#how-it-works"
-                className="inline-flex items-center justify-center w-full sm:w-[289px] h-[58px] sm:h-[70px] rounded-[12px] border border-boom-pink bg-boom-pink/20 font-[family-name:var(--font-oxanium)] font-medium text-[20px] sm:text-[24px] tracking-[0.48px] text-white uppercase hover:bg-boom-pink/30 transition-colors"
+                className="inline-flex items-center justify-center w-full sm:flex-1 lg:flex-none lg:w-[289px] h-[58px] sm:h-[70px] rounded-[12px] border border-boom-pink bg-boom-pink/20 font-[family-name:var(--font-oxanium)] font-medium text-[18px] sm:text-[20px] lg:text-[24px] tracking-[0.48px] text-white uppercase hover:bg-boom-pink/30 transition-colors whitespace-nowrap"
               >
                 SEE HOW IT WORKS &nbsp;&gt;
               </a>
