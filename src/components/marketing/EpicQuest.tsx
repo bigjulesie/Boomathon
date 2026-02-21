@@ -1,19 +1,23 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, useReducedMotion } from "framer-motion";
 import { useRef } from "react";
 
 export function EpicQuest() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const prefersReducedMotion = useReducedMotion();
+  const y = prefersReducedMotion ? 0 : 20;
+  const xL = prefersReducedMotion ? 0 : -30;
+  const xR = prefersReducedMotion ? 0 : 30;
 
   return (
     <section id="how-it-works" ref={ref} className="bg-white pt-11 pb-20 md:pb-28">
       <div className="mx-auto max-w-[1512px] px-5 sm:px-8 md:px-16 lg:px-[146px]">
         {/* Boomathon namestyle with hexagon */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
           className="mb-6"
@@ -29,7 +33,7 @@ export function EpicQuest() {
 
         {/* Heading */}
         <motion.h2
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-[family-name:var(--font-racing)] text-[28px] md:text-[34px] lg:text-[40px] text-boom-black mb-8"
@@ -40,7 +44,7 @@ export function EpicQuest() {
         {/* Two-column: text + image */}
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: xL }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-5"
@@ -57,7 +61,7 @@ export function EpicQuest() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: xR }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
           >

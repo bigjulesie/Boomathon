@@ -26,7 +26,9 @@ const racingSansOne = Racing_Sans_One({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://boomathon.netlify.app"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://boomathon.netlify.app"
+  ),
   title: "Boomathon | Deploy Your Potential",
   description:
     "Boomathon is an immersive team challenge that measures leadership, collaboration, and core skills through adventure-based scenarios.",

@@ -18,10 +18,10 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 h-[72px] md:h-[100px] bg-boom-black">
       <div className="mx-auto max-w-[1512px] flex items-center justify-between px-5 sm:px-8 h-full">
         {/* Logo */}
-        <Link href="/">
+        <Link href="/" aria-label="Boomathon — go to homepage">
           <Image
             src="/images/boomathon-namestyle-wo.svg"
-            alt="Boomathon"
+            alt=""
             width={268}
             height={64}
             className="w-[180px] sm:w-[220px] md:w-[268px] h-auto"

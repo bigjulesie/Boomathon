@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export function Footer() {
@@ -7,13 +8,15 @@ export function Footer() {
         {/* Top row: Logo + Nav */}
         <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between md:items-center pt-10 md:pt-[54px]">
           {/* Logo */}
-          <Image
-            src="/images/boomathon-namestyle-wo.svg"
-            alt="Boomathon"
-            width={272}
-            height={64}
-            className="w-[200px] sm:w-[240px] md:w-[272px] h-auto"
-          />
+          <Link href="/" aria-label="Boomathon — back to top">
+            <Image
+              src="/images/boomathon-namestyle-wo.svg"
+              alt=""
+              width={272}
+              height={64}
+              className="w-[200px] sm:w-[240px] md:w-[272px] h-auto"
+            />
+          </Link>
 
           {/* Navigation — 2x2 grid on mobile, row on md+ */}
           <nav className="grid grid-cols-2 gap-x-8 gap-y-4 text-center md:flex md:flex-row md:items-center md:gap-6 lg:gap-[50px] font-[family-name:var(--font-jetbrains)] text-[14px] md:text-[16px] leading-[normal] tracking-[2.72px] uppercase">

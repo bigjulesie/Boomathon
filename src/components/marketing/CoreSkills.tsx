@@ -1,19 +1,22 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, useReducedMotion } from "framer-motion";
 import { useRef } from "react";
 
 export function CoreSkills() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const prefersReducedMotion = useReducedMotion();
+  const y = prefersReducedMotion ? 0 : 20;
+  const scale = prefersReducedMotion ? 1 : 0.9;
 
   return (
     <section id="the-evidence" ref={ref} className="bg-boom-blue-dark pt-20 md:pt-28 pb-28 md:pb-40">
       <div className="mx-auto max-w-[1512px] px-5 sm:px-8 md:px-16 lg:px-[146px]">
         {/* Hexagon illustration */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale }}
           animate={isInView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="flex justify-center"
@@ -29,7 +32,7 @@ export function CoreSkills() {
 
         {/* Title + description */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.3 }}
           className="text-center mt-12"

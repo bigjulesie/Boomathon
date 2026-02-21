@@ -1,12 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, useReducedMotion } from "framer-motion";
 import { useRef } from "react";
 
 export function Benchmark() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const prefersReducedMotion = useReducedMotion();
+  const y30 = prefersReducedMotion ? 0 : 30;
+  const y20 = prefersReducedMotion ? 0 : 20;
+  const x = prefersReducedMotion ? 0 : 30;
 
   return (
     <section ref={ref} className="relative overflow-hidden">
@@ -36,7 +40,7 @@ export function Benchmark() {
 
         {/* Heading */}
         <motion.h2
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: y30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.1 }}
           className="font-[family-name:var(--font-oxanium)] font-bold text-[32px] md:text-[42px] lg:text-[58px] leading-[1.1] text-white max-w-[1000px] mb-10"
@@ -47,7 +51,7 @@ export function Benchmark() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left: Description */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: y20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.2 }}
             className="space-y-6"
@@ -68,7 +72,7 @@ export function Benchmark() {
 
           {/* Right: Score table */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.3 }}
             className="flex justify-center lg:justify-end"
@@ -85,7 +89,7 @@ export function Benchmark() {
 
         {/* Bottom tagline */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: y20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.4 }}
           className="mt-16"

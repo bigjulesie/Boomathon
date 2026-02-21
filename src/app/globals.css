@@ -60,15 +60,6 @@
 
 :root {
   --radius: 0.625rem;
-  --boom-pink: #FF45CE;
-  --boom-pink-dark: #7E376B;
-  --boom-blue-dark: #0C2435;
-  --boom-blue-text: #19435D;
-  --boom-blue-accent: #00ADFF;
-  --boom-blue-airforce: #297EA6;
-  --boom-black: #15171B;
-  --boom-blue-pale: #A9E3FF;
-  --boom-grey: #8C9AAD;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -136,13 +127,17 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
-    @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
     @apply bg-background text-foreground;
   }
 }

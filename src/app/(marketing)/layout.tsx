@@ -1,14 +1,16 @@
-import Script from "next/script";
 import { Navbar } from "@/components/marketing/Navbar";
 import { Footer } from "@/components/marketing/Footer";
 import { faqJsonLd } from "@/components/marketing/FAQ";
+
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://boomathon.netlify.app";
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Boomathon",
-  url: "https://boomathon.netlify.app",
-  logo: "https://boomathon.netlify.app/images/boomathon-namestyle-wo.svg",
+  url: siteUrl,
+  logo: `${siteUrl}/images/boomathon-namestyle-wo.svg`,
   description:
     "Boomathon is an immersive team challenge that measures leadership, collaboration, and core skills through adventure-based scenarios.",
   contactPoint: {
@@ -29,20 +31,18 @@ export default function MarketingLayout({
 }) {
   return (
     <div className="bg-boom-black text-white min-h-screen">
-      <Script
+      <script
         id="organization-schema"
         type="application/ld+json"
-        strategy="afterInteractive"
       >
         {JSON.stringify(jsonLd)}
-      </Script>
-      <Script
+      </script>
+      <script
         id="faq-schema"
         type="application/ld+json"
-        strategy="afterInteractive"
       >
         {JSON.stringify(faqJsonLd)}
-      </Script>
+      </script>
       <Navbar />
       <main>{children}</main>
       <Footer />
