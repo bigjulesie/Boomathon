@@ -1,9 +1,14 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 
 export function Hero() {
+  const prefersReducedMotion = useReducedMotion();
+  const y = prefersReducedMotion ? 0 : 30;
+  const y20 = prefersReducedMotion ? 0 : 20;
+  const x60 = prefersReducedMotion ? 0 : 60;
+
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden">
       {/* Low-poly geometric background */}
@@ -46,7 +51,7 @@ export function Hero() {
           {/* Left: Headline + description + CTAs */}
           <div>
             <motion.h1
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
               className="font-[family-name:var(--font-oxanium)] font-bold text-[clamp(3rem,6vw,90px)] leading-[1.15] tracking-[-0.03em] uppercase"
@@ -59,7 +64,7 @@ export function Hero() {
 
             {/* Subtitle */}
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: y20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
               className="mt-6 font-[family-name:var(--font-inter)] font-bold text-[18px] md:text-[22px] lg:text-[26px] leading-[1.4] tracking-[-0.52px]"
@@ -73,7 +78,7 @@ export function Hero() {
 
             {/* Description */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: y20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
               className="mt-6 border-l-2 border-boom-blue-pale/40 pl-6 max-w-xl"
@@ -87,7 +92,7 @@ export function Hero() {
 
             {/* CTA Buttons */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: y20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.45, ease: "easeOut" }}
               className="mt-8 flex flex-col sm:flex-row gap-4"
@@ -109,7 +114,7 @@ export function Hero() {
 
           {/* Right: Telemetry Illustration */}
           <motion.div
-            initial={{ opacity: 0, x: 60 }}
+            initial={{ opacity: 0, x: x60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
             className="flex justify-center lg:justify-end"

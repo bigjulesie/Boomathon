@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, useReducedMotion } from "framer-motion";
 import { useRef } from "react";
 
 const participantAlts = [
@@ -37,6 +37,8 @@ const clockAlts = [
 export function Stats() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const prefersReducedMotion = useReducedMotion();
+  const y = prefersReducedMotion ? 0 : 30;
 
   return (
     <section id="formats" ref={ref} className="bg-boom-blue-dark pt-16 md:pt-[88px] pb-20 md:pb-28">
@@ -68,7 +70,7 @@ export function Stats() {
         <div className="px-5 sm:px-8 md:px-16 lg:px-[146px]">
           {/* Participants */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-center mb-12 md:mb-20"
@@ -107,7 +109,7 @@ export function Stats() {
 
           {/* Time Zones */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.3 }}
             className="text-center mb-12 md:mb-20"
@@ -146,7 +148,7 @@ export function Stats() {
 
           {/* Duration */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.5 }}
             className="text-center"

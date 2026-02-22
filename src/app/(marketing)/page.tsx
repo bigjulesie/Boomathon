@@ -1,5 +1,3 @@
-"use client";
-
 import { Hero } from "@/components/marketing/Hero";
 import { EpicQuest } from "@/components/marketing/EpicQuest";
 import { Stats } from "@/components/marketing/Stats";
