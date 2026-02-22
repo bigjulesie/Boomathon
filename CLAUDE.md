@@ -1,7 +1,15 @@
 # Boomathon
 
-Next.js 15 App Router + Supabase + Tailwind CSS v4 + Framer Motion + shadcn/ui.
+Next.js 16 App Router + Supabase + Tailwind CSS v4 + Framer Motion + shadcn/ui.
 Hosted on Netlify. Design assets in `src/assets/boomathon/`.
+
+## Navigation & Section IDs
+
+- **How It Works** → `#how-it-works` (EpicQuest section)
+- **The Evidence** → `#the-evidence` (CoreSkills section)
+- **Formats** → `#formats` (Stats section)
+- **Book a Call** → `#book-a-call` (CTA section)
+- **FAQ** → `#faq`
 
 ## Stack & Versions
 
@@ -75,22 +83,32 @@ public/images/           # All runtime images (SVG, PNG, JPG)
 
 ### Animations (Framer Motion)
 
-Standard scroll-triggered pattern:
+Standard scroll-triggered pattern with reduced motion support:
 
 ```tsx
 const ref = useRef(null);
 const isInView = useInView(ref, { once: true, margin: "-100px" });
+const prefersReducedMotion = useReducedMotion();
+const y = prefersReducedMotion ? 0 : 30;
 
 <motion.div
-  initial={{ opacity: 0, y: 30 }}
+  initial={{ opacity: 0, y }}
   animate={isInView ? { opacity: 1, y: 0 } : {}}
   transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
 >
 ```
 
 - `once: true` — animate only on first scroll into view
+- `useReducedMotion()` — respect user's OS motion preferences
 - Duration: 0.6–0.8s, stagger delays 0.1–0.5s
 - Entrance types: fade (`opacity`), slide (`y`/`x`), scale, rotate
+
+### Accessibility
+
+- FAQ accordion uses `aria-expanded`, `aria-controls`, `aria-labelledby`, `role="region"`
+- Navbar logo and footer logo have descriptive `aria-label` on their links
+- Decorative images use `alt=""`
+- Hamburger menu button has dynamic `aria-label`
 
 ### SEO & Metadata
 
