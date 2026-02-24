@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/marketing/Navbar";
 import { Footer } from "@/components/marketing/Footer";
-import { faqJsonLd } from "@/components/marketing/FAQ";
+import { faqJsonLd } from "@/lib/faq-data";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://boomathon.netlify.app";
