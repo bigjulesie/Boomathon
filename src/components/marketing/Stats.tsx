@@ -75,10 +75,10 @@ export function Stats() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-center mb-12 md:mb-20"
           >
-            <h3 className="font-[family-name:var(--font-oxanium)] font-bold text-[32px] md:text-[42px] lg:text-[58px] leading-[1]">
+            <h2 className="font-[family-name:var(--font-oxanium)] font-bold text-[32px] md:text-[42px] lg:text-[58px] leading-[1]">
               <span className="text-white">12-1,000 </span>
               <span className="text-boom-pink">Participants</span>
-            </h3>
+            </h2>
             <p className="mt-4 font-[family-name:var(--font-inter)] text-[18px] md:text-[22px] lg:text-[26px] leading-[1.4] tracking-[-0.52px] text-white text-center max-w-[900px] mx-auto">
               From targeted leadership pressure tests to full-scale organisational stress tests – Boomathon scales to the mission.
             </p>
@@ -114,10 +114,10 @@ export function Stats() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="text-center mb-12 md:mb-20"
           >
-            <h3 className="font-[family-name:var(--font-oxanium)] font-bold text-[32px] md:text-[42px] lg:text-[58px] leading-[1]">
+            <h2 className="font-[family-name:var(--font-oxanium)] font-bold text-[32px] md:text-[42px] lg:text-[58px] leading-[1]">
               <span className="text-white">1-24</span>
               <span className="text-boom-pink"> Time Zones</span>
-            </h3>
+            </h2>
             <p className="mt-4 font-[family-name:var(--font-inter)] text-[18px] md:text-[22px] lg:text-[26px] leading-[1.4] tracking-[-0.52px] text-white text-center max-w-[900px] mx-auto">
               Real global teams face real global pressure. Boomathon runs across every time zone you operate in.
             </p>
@@ -153,10 +153,10 @@ export function Stats() {
             transition={{ duration: 0.7, delay: 0.5 }}
             className="text-center"
           >
-            <h3 className="font-[family-name:var(--font-oxanium)] font-bold text-[32px] md:text-[42px] lg:text-[58px] leading-[1]">
+            <h2 className="font-[family-name:var(--font-oxanium)] font-bold text-[32px] md:text-[42px] lg:text-[58px] leading-[1]">
               <span className="text-white">2-24</span>
               <span className="text-boom-pink"> Hours Duration</span>
-            </h3>
+            </h2>
             <p className="mt-4 font-[family-name:var(--font-inter)] text-[18px] md:text-[22px] lg:text-[26px] leading-[1.4] tracking-[-0.52px] text-white text-center max-w-[900px] mx-auto">
               A focused sprint or a gruelling relay – the intensity is yours to set. The pressure is ours to apply.
             </p>
