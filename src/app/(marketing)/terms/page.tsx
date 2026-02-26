@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Use | Boomathon",
   description: "Boomathon terms of use — conditions for using our website and services.",
+  alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {

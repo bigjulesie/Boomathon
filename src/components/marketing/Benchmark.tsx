@@ -13,7 +13,7 @@ export function Benchmark() {
   const x = prefersReducedMotion ? 0 : 30;
 
   return (
-    <section ref={ref} className="relative overflow-hidden">
+    <section id="benchmark" ref={ref} className="relative overflow-hidden">
       {/* Low-poly background */}
       <div className="absolute inset-0">
         <Image
