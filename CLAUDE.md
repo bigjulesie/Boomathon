@@ -113,8 +113,9 @@ const y = prefersReducedMotion ? 0 : 30;
 ### SEO & Metadata
 
 - Root metadata in `src/app/layout.tsx` (OG tags, canonical, manifest)
-- Schema.org markup: Organization in marketing layout, FAQPage in FAQ component
-- Static SEO files in `public/`: `robots.txt`, `sitemap.xml`, `llms.txt`
+- Schema.org markup: Organization + WebSite in root layout, FAQPage + Service in homepage, Organization in marketing layout
+- SEO route handlers in `src/app/`: `robots.ts`, `sitemap.ts` (dynamic, reads `NEXT_PUBLIC_SITE_URL`)
+- Static file: `public/llms.txt` (AI crawler context)
 
 ## Commands
 
