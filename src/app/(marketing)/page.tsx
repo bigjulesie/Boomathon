@@ -5,10 +5,15 @@ import { CoreSkills } from "@/components/marketing/CoreSkills";
 import { Benchmark } from "@/components/marketing/Benchmark";
 import { CTA } from "@/components/marketing/CTA";
 import { FAQ } from "@/components/marketing/FAQ";
+import { faqJsonLd } from "@/lib/faq-data";
 
 export default function MarketingPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Hero />
       <EpicQuest />
       {/* Teamship tagline banner */}
