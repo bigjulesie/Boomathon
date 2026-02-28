@@ -16,7 +16,7 @@ const serviceJsonLd = {
   name: "Boomathon Team Simulation",
   serviceType: "Corporate Team Development",
   description:
-    "An immersive 4-to-24-hour team simulation that measures and develops leadership, collaboration, emotional intelligence, communication, conflict resolution, and adaptability across teams of 12 to 1,000 participants.",
+    "An immersive 2-to-24-hour team simulation that measures and develops leadership, collaboration, emotional intelligence, communication, conflict resolution, and adaptability across teams of 12 to 1,000 participants.",
   provider: {
     "@id": `${siteUrl}/#organization`,
   },
