@@ -5,10 +5,51 @@ import { CoreSkills } from "@/components/marketing/CoreSkills";
 import { Benchmark } from "@/components/marketing/Benchmark";
 import { CTA } from "@/components/marketing/CTA";
 import { FAQ } from "@/components/marketing/FAQ";
+import { faqJsonLd } from "@/lib/faq-data";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://boomathon.netlify.app";
+
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": `${siteUrl}/#service`,
+  name: "Boomathon Team Simulation",
+  serviceType: "Corporate Team Development",
+  description:
+    "An immersive 2-to-24-hour team simulation that measures and develops leadership, collaboration, emotional intelligence, communication, conflict resolution, and adaptability across teams of 12 to 1,000 participants.",
+  provider: {
+    "@id": `${siteUrl}/#organization`,
+  },
+  areaServed: {
+    "@type": "Place",
+    name: "Worldwide",
+  },
+  audience: {
+    "@type": "Audience",
+    audienceType: "Corporate teams and executives",
+  },
+  offers: {
+    "@type": "Offer",
+    availability: "https://schema.org/PreOrder",
+    availabilityStarts: "2026-03-01",
+    url: `${siteUrl}/#book-a-call`,
+    seller: {
+      "@id": `${siteUrl}/#organization`,
+    },
+  },
+};
 
 export default function MarketingPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <Hero />
       <EpicQuest />
       {/* Teamship tagline banner */}

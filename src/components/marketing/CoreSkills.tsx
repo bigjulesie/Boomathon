@@ -37,10 +37,10 @@ export function CoreSkills() {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="text-center mt-12"
         >
-          <h3 className="font-[family-name:var(--font-oxanium)] font-bold text-[32px] md:text-[42px] lg:text-[58px] leading-[1]">
+          <h2 className="font-[family-name:var(--font-oxanium)] font-bold text-[32px] md:text-[42px] lg:text-[58px] leading-[1]">
             <span className="text-white">6</span>
             <span className="text-boom-pink"> Teamship Qualities</span>
-          </h3>
+          </h2>
           <p className="mt-4 font-[family-name:var(--font-inter)] text-[18px] md:text-[22px] lg:text-[26px] leading-[1.4] tracking-[-0.52px] text-white text-center max-w-[900px] mx-auto">
             Six capabilities. Tested simultaneously. Under real pressure. Because that&apos;s how the real world works.
           </p>

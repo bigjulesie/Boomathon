@@ -25,6 +25,22 @@ const racingSansOne = Racing_Sans_One({
   weight: "400",
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://boomathon.netlify.app";
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${siteUrl}/#website`,
+  url: siteUrl,
+  name: "Boomathon",
+  description:
+    "The ultimate arena of tough teamship. A high-stakes virtual scenario designed to test and forge elite teamship capabilities.",
+  publisher: {
+    "@id": `${siteUrl}/#organization`,
+  },
+  inLanguage: "en",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://boomathon.netlify.app"
@@ -39,7 +55,7 @@ export const metadata: Metadata = {
     title: "Boomathon | Deploy Your Potential",
     description:
       "The ultimate arena of tough teamship. A high-stakes virtual scenario designed to test and forge elite teamship capabilities.",
-    url: "https://boomathon.netlify.app",
+    url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://boomathon.netlify.app",
     siteName: "Boomathon",
     type: "website",
     images: [
@@ -79,6 +95,10 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${oxanium.variable} ${jetbrainsMono.variable} ${racingSansOne.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         {children}
       </body>
     </html>
